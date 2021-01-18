@@ -15,7 +15,7 @@ Each application has its own folder. You can see the final app or start working 
 
 1. [Pomodoro](https://github.com/svensktutby/make-20-react-apps/tree/master/01-pomodoro)
 1. [Markdown Editor](https://github.com/svensktutby/make-20-react-apps/tree/master/02-markdown-editor)
-1. [Browser Tabs](https://github.com/svensktutby/make-20-react-apps/tree/master/03-browser-tabs)
+1. [Browser Tabs](https://github.com/svensktutby/make-20-react-apps/tree/master/03-highlight-tabs)
 1. [Paper Rock Scissors](https://github.com/svensktutby/make-20-react-apps/tree/master/04-paper-rock-scissors)
 1. [Moving Boxes and Zelda](https://github.com/svensktutby/make-20-react-apps/tree/master/05-moving-boxes-and-zelda)
 1. [Infinite Image Gallery](https://github.com/svensktutby/make-20-react-apps/tree/master/06-infinite-image-gallery)

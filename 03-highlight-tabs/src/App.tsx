@@ -1,25 +1,21 @@
-import React, { ChangeEvent, FC, useState } from 'react';
+import React, { FC } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import './App.css';
+import { Header } from './components/Header';
+import { Routes } from './Routes';
 
 export const App: FC = () => {
   return (
-    <div className="app">
-      <div className="browser">
-        <div className="tabs">
-          <div className="tab">
-            <a>Home</a>
-          </div>
-          <div className="tab">
-            <a>About</a>
-          </div>
-          <div className="tab">
-            <a>Features</a>
+    <Router>
+      <div className="app">
+        <div className="browser">
+          <Header />
+          <div className="viewport">
+            <Routes />
           </div>
         </div>
-
-        <div className="viewport">Pages Go Here</div>
       </div>
-    </div>
+    </Router>
   );
 };
