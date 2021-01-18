@@ -1,0 +1,108 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: #634cec;
+}
+
+.browser {
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+  min-height: 50vh;
+
+  background: #ffb91f;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.tabs {
+  display: flex;
+  flex-shrink: 1;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.tab {
+  position: relative;
+
+  min-width: 120px;
+  overflow: hidden;
+
+  font-size: 14px;
+
+  background: #6e45df;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+
+  transition: 0.3s ease all;
+}
+
+.tab a {
+  display: block;
+  padding: 12px 25px;
+
+  color: #e1daf5;
+  text-decoration: none;
+}
+
+.tab a.is-active {
+  color: #eee;
+
+  background: #5131a9;
+}
+
+.address-bar {
+  padding: 8px;
+
+  background: #5533b3;
+}
+
+.address-bar input {
+  width: 100%;
+  padding: 8px 20px;
+
+  font-size: 18px;
+  color: #eee;
+
+  background: #3a2081;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.viewport {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  color: #dacff7;
+
+  background: #5131a9;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/**
+ * Add your highlight code here
+ */
