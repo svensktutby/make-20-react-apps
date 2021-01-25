@@ -1,0 +1,59 @@
+.app {
+  position: relative;
+
+  height: 100vh;
+}
+
+.arrows {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  display: grid;
+  grid-gap: 8px;
+  grid-template: auto auto / auto auto auto;
+  grid-template-areas: ". up ."
+  "left down right";
+}
+
+.arrows button {
+  width: 60px;
+  height: 40px;
+
+  font-size: 16px;
+  color: rgb(167, 220, 182);
+
+  background: rgba(43, 159, 75, 0.811);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.3s ease all;
+}
+
+.arrows button:hover {
+  color: #fff;
+
+  background: rgba(51, 177, 87, 0.811);
+}
+
+.arrows button:first-child {
+  grid-area: up;
+}
+
+.arrows button:nth-child(2) {
+  grid-area: left;
+}
+
+.arrows button:nth-child(3) {
+  grid-area: down;
+}
+
+.arrows button:last-child {
+  grid-area: right;
+}
+
+.images {
+  display: none;
+}
