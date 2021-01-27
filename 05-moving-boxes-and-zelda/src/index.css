@@ -15,7 +15,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 
   font-size: 1.6rem;
   line-height: 1.42;
@@ -23,8 +22,6 @@ body {
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   sans-serif;
   word-break: break-word;
-
-  /*background-image: url("https://i.imgur.com/noNWRPk.png");*/
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
