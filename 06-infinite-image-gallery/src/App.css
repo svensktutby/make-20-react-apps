@@ -10,6 +10,11 @@
   background: #dcdcdc;
 }
 
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .error {
   display: inline-block;
   margin: 30px;

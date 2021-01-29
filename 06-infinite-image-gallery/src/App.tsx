@@ -26,6 +26,8 @@ export const App: FC = () => {
     if (query) apiUrl = `${baseUrl}search/photos/?query=${query}`;
     apiUrl += `&client_id=${apiKey}`;
     apiUrl += `&page=${page}`;
+    // fix for wide screens
+    if (page === 1) apiUrl += `&per_page=20`;
 
     fetch(apiUrl)
       .then((res) => res.json())
@@ -68,32 +70,34 @@ export const App: FC = () => {
 
   return (
     <div className="app">
-      <h1>Unsplash Image Gallery!</h1>
+      <div className="container">
+        <h1>Unsplash Image Gallery!</h1>
 
-      <form onSubmit={searchPhotos}>
-        <input
-          type="text"
-          placeholder="Search Unsplash..."
-          value={query}
-          onChange={queryHandler}
-        />
-        <button type="button">Search</button>
-      </form>
+        <form onSubmit={searchPhotos}>
+          <input
+            type="text"
+            placeholder="Search Unsplash..."
+            value={query}
+            onChange={queryHandler}
+          />
+          <button type="button">Search</button>
+        </form>
 
-      <InfiniteScroll
-        dataLength={images.length}
-        next={() => {
-          setPage((prevPage) => prevPage + 1);
-        }}
-        hasMore
-        loader={<h4>Loading...</h4>}
-      >
-        <div className="image-grid">
-          {images.map((image) => (
-            <Image key={v4()} image={image} />
-          ))}
-        </div>
-      </InfiniteScroll>
+        <InfiniteScroll
+          dataLength={images.length}
+          next={() => {
+            setPage((prevPage) => prevPage + 1);
+          }}
+          hasMore
+          loader={<h4>Loading...</h4>}
+        >
+          <div className="image-grid">
+            {images.map((image) => (
+              <Image key={v4()} image={image} />
+            ))}
+          </div>
+        </InfiniteScroll>
+      </div>
     </div>
   );
 };
