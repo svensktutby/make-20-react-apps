@@ -4,7 +4,7 @@ We'll handle authentication (something many production apps need). We'll integra
 
 [View Demo](https://svensktutby-authentication.netlify.app/)
 
-[![](https://scotch-res.cloudinary.com/video/upload/vs_50,dl_200,e_loop/v1592352072/16_-_authentication_tm16s4.gif)](https://learn.chrisoncode.io/courses/10-react-apps-series-a/348627-08-authentication/992048-00-authentication-preview)
+[![](https://scotch-res.cloudinary.com/video/upload/vs_50,dl_200,e_loop/v1592352072/16_-_authentication_tm16s4.gif)](https://svensktutby-authentication.netlify.app/)
 
 ### React skills used in this app
 
