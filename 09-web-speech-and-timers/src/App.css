@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+body {
+  padding: 30px;
+
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+
+  background-color: #1f1f1f;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  .app {
+    max-width: 50%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 60px;
+  line-height: 1;
+  font-family: "Luckiest Guy", sans-serif;
+  color: #fbca17;
+  letter-spacing: 3px;
+}
+
+.timers {
+  margin-bottom: 50px;
+}
+
+.timer {
+  display: flex;
+}
+
+input {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 15px;
+
+  font-size: 21px;
+  color: #eee;
+
+  background: #444;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="number"] {
+  flex-shrink: 1;
+  width: 100px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+}
+
+button {
+  margin-right: 8px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+
+  font-size: 14px;
+  color: #999;
+
+  background: #555;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  padding: 25px 45px;
+
+  font-size: 21px;
+}
+
+.start-button {
+  color: #aedac4;
+
+  background: #2f855a;
+}
+
+.stop-button {
+  color: #f0c0c0;
+
+  background: #c53030;
+}
+
+.buttons p {
+  font-size: 16px;
+  color: #555;
+}
